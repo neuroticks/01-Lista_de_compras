@@ -1,0 +1,30 @@
+nav {
+    /* outline: 1px solid blue; */
+
+
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: .2rem;
+
+        font-weight: var(--fw-medium);
+        font-size: var(--fs-14);
+        line-height: var(--lh-16);
+
+        color: var(--color-brand);
+
+        padding-block: .5rem;
+    }
+
+    & svg {
+        width: .7rem;
+        height: .7rem;
+
+        aspect-ratio: 1/1;
+
+        path {
+            fill: var(--color-brand);
+        }
+    }
+}

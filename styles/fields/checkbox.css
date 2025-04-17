@@ -1,0 +1,39 @@
+.checkbox-wrapper {
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+
+    position: relative;
+
+    width: 90%;
+
+    /* faz com que o INPUT-checkbox ocupe toda a área do checkbox-wrapper - pois assim, dentro da área do checkbox-wrapper (checkbox+texto) será entendido o click */
+    & [type="checkbox"] {
+        all: unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    & .checkbox-image {
+        flex: 0 0 1.5rem;
+
+        height: 1.1rem;
+
+        /* padding-right: .5rem; */
+
+        background-image: url(../../assets/icons/checkbox-default.svg);
+        background-repeat: no-repeat;
+        /* background-size: cover; */
+    }
+
+    &:hover,
+    &:focus-within {
+        & .checkbox-image {
+            background-image: url(../../assets/icons/checkbox-hover.svg);
+        }
+    }
+
+    &:has(:checked) .checkbox-image {
+        background-image: url(../../assets/icons/checkbox-selected.svg);
+    }
+}

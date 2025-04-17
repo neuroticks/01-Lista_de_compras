@@ -1,0 +1,25 @@
+input {
+    font-weight: var(--fw-medium);
+    width: 100%;
+
+    background-color: var(--color-background-secondary);
+    color: var(--color-content-tertiary);
+    opacity: 70%;
+
+    border-radius: .6rem;
+    border: 2px solid var(--color-border-primary);
+
+    padding: .6rem;
+
+    &:hover {
+        border-color: var(--color-border-hover);
+    }
+
+    &:active,
+    &:focus,
+    &:focus-within {
+        border: 2px solid var(--color-brand);
+
+        color: var(--color-content-primary);
+    }
+}
