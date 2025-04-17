@@ -18,7 +18,7 @@ lista.addEventListener('click', (event) => {
 
         const itemLista = event.target.closest('.item');
 
-        console.log(itemLista)
+        // console.log(itemLista)
 
         itemLista.remove()
         showItemDeletedMessage()
